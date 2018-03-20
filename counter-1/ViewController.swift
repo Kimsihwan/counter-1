@@ -8,6 +8,9 @@
 
 import UIKit
 var count = 0
+var color = 0
+
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var lbl: UILabel!
@@ -29,6 +32,15 @@ class ViewController: UIViewController {
         
         lbl.text = "\(count)"
         
+    }
+    @IBAction func btnc(_ sender: Any) {
+        if color == 0 {
+            self.view.backgroundColor = UIColor.blue
+            color = color + 1
+        } else if color == 1 {
+            self.view.backgroundColor = UIColor.yellow
+                        color = color - 1
+        }
     }
     
     override func didReceiveMemoryWarning() {
