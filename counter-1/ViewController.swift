@@ -23,6 +23,14 @@ class ViewController: UIViewController {
         lbl.text = "\(count)"
     }
     
+    @IBAction func btnr(_ sender: Any) {
+        
+        count = 0
+        
+        lbl.text = "\(count)"
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
